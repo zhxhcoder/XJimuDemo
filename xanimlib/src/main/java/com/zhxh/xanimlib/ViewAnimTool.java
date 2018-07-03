@@ -9,8 +9,7 @@ import android.widget.TextView;
 /**
  * Created by zhxh on 2018/7/3
  */
-public class SocketAnimationTool {
-
+public class ViewAnimTool {
 
     public synchronized static void viewSetAnimation(TextView textView, String refreshValue) {
 
@@ -20,7 +19,7 @@ public class SocketAnimationTool {
             textView.setText(refreshValue);
 
             if (oldRefreshValue != Double.parseDouble(refreshValue)) {
-                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_scoket);
+                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_view);
                 textView.startAnimation(mAnimation);
             }
         }
@@ -34,7 +33,7 @@ public class SocketAnimationTool {
             textView.setText(refreshValue);
 
             if (!oldRefreshValue.equals(refreshValue)) {
-                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_scoket);
+                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_view);
                 textView.startAnimation(mAnimation);
             }
         }
@@ -48,7 +47,7 @@ public class SocketAnimationTool {
             textView.setText(refreshValue);
 
             if (!oldRefreshValue.equals(refreshValue)) {
-                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_scoket);
+                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_view);
                 mAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
                 textView.startAnimation(mAnimation);
             }
@@ -63,7 +62,7 @@ public class SocketAnimationTool {
             textView.setText(refreshValue);
 
             if (!oldRefreshValue.equals(refreshValue)) {
-                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_scoket);
+                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_view);
                 mAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
                 textView.startAnimation(mAnimation);
             }
@@ -78,7 +77,7 @@ public class SocketAnimationTool {
             textView.setText(refreshValue);
 
             if (!oldRefreshValue.equals(refreshValue)) {
-                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_scoket);
+                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_view);
                 mAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
                 textView.startAnimation(mAnimation);
             }
@@ -94,7 +93,7 @@ public class SocketAnimationTool {
             textView.setText(refreshValue);
 
             if (!oldRefreshValue.equals(refreshValue)) {
-                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_scoket);
+                Animation mAnimation = AnimationUtils.loadAnimation(textView.getContext(), R.anim.alpha_view);
                 mAnimation.setInterpolator(new AccelerateDecelerateInterpolator());
                 textView.startAnimation(mAnimation);
             }
