@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.zhxh.xanim.AnimateLayoutChanges" >
+        </activity>
+        <activity android:name="com.zhxh.xanim.AnimateFreeFall" >
+        </activity>
+        <activity android:name="com.zhxh.xanim.AnimateMoveInSecond" >
+        </activity>
+        <activity android:name="com.zhxh.xanim.AnimateMultiple" >
+        </activity>
+        <activity android:name="com.zhxh.xanim.AnimateLayoutTransition" >
+        </activity>
+        <activity android:name="com.zhxh.xanim.AnimateLayoutAnimation" >
+        </activity>
     </application>
 
 </manifest>
