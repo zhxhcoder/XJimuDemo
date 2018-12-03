@@ -1,1 +1,7 @@
-include ':app', ':xanimlib'
+include ':app',
+        ':sharecomponentkotlin',
+        ':readercomponent',
+        ':sharecomponent',
+        ':componentservice',
+        ':basiclib',
+        ':basicres'

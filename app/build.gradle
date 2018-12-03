@@ -1,38 +1,58 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.dd.comgradle'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.androidTools
+
     defaultConfig {
-        applicationId "com.zhxh.xanim"
-        minSdkVersion 16
-        targetSdkVersion 27
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
+        applicationId "com.luojilab.androidcomponent"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "app"]
+            }
+        }
+
+        vectorDrawables.useSupportLibrary = true
+
     }
     buildTypes {
         release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            signingConfig signingConfigs.debug
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-}
 
-repositories {
-    flatDir {
-        dirs 'libs'
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
     }
+
+
 }
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
-    implementation 'com.android.support:design:27.1.1'
-    implementation project(':xanimlib')
-    //implementation(name: 'xanim', ext: 'aar')
-    //implementation 'com.zhxh:xanimlib:1.0'
+    compile project(':componentservice')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.android.support:support-vector-drawable:27.0.2'
+    annotationProcessor deps.jimu.router_anno_compiler
+}
+
+combuild {
+    applicationName = 'com.luojilab.componentdemo.application.AppApplication'
+    isRegisterCompoAuto = true
 }
