@@ -6,6 +6,8 @@ https://www.jianshu.com/p/1b1d77f58e84
 
 参考图片
 
+
+项目结构图
 ![](https://github.com/zhxhcoder/XJimuDemo/blob/master/screenshots/xjimudemo.png)
 
 同时我也慢慢从零开始对公司项目进行组件化改造
