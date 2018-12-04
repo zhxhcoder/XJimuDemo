@@ -17,6 +17,4 @@ public final class Utils {
         final float scale = resources.getDisplayMetrics().scaledDensity;
         return sp * scale;
     }
-
-
 }
