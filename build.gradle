@@ -1,15 +1,15 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-//    ext.kotlin_version = '1.2.30'
+//    ext.kotlin_version = '1.2.51'
     ext.versions = [
-            'minSdk'        : 15,
-            'targetSdk'     : 21,
-            'compileSdk'    : 27,
-            'kotlin'        : '1.2.30',
-            'supportLibrary': '27.0.2',
+            'minSdk'        : 17,
+            'targetSdk'     : 26,
+            'compileSdk'    : 28,
+            'kotlin'        : '1.2.51',
+            'supportLibrary': '28.0.0',
             'androidPlugin' : '2.3.1',
-            'androidTools'  : '27.0.3',
+            'androidTools'  : '28.0.3',
     ]
 
     ext.deps = [
@@ -71,7 +71,7 @@ buildscript {
 
             report : [
                     'anno' : 'osp.leobert.android:ReportNotation:1.0.0',
-                    'compiler':'osp.leobert.android:report-anno-compiler:1.0.0'
+                    'implementation':'osp.leobert.android:report-anno-compiler:1.0.0'
             ]
     ]
 
@@ -92,7 +92,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.3'
+        classpath 'com.android.tools.build:gradle:3.2.1'
         classpath deps.jimu.gradle_plugin
 
         classpath deps.android.gradlePlugin
