@@ -9,16 +9,16 @@ import android.support.annotation.Nullable;
 
 public class BaseApplication extends Application {
 
-    private static BaseApplication mAppCotext;
+    private static BaseApplication mAppContext;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        mAppCotext = this;
+        mAppContext = this;
     }
 
     @Nullable
     public static Application getAppContext() {
-        return mAppCotext;
+        return mAppContext;
     }
 }
