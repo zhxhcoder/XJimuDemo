@@ -4,11 +4,11 @@ HOST : kotlin
 
 分享杂志页面
 /shareMagazine
-author:com.luojilab.componentservice.share.bean.AuthorKt
+author:com.xlab.componentservice.share.bean.AuthorKt
 bookName:String
 
 test multi java and kotlin in one module
 /javatest
-author:com.luojilab.componentservice.share.bean.AuthorKt
+author:com.xlab.componentservice.share.bean.AuthorKt
 bookName:String
 

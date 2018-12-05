@@ -1,4 +1,4 @@
-package com.luojilab.componentservice;
+package com.xlab.componentservice;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

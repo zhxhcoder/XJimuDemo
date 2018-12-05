@@ -33,6 +33,4 @@ public class AppApplication extends BaseApplication {
                 EventManager.create(AppComponentEventManager.class));
 
     }
-
-
 }

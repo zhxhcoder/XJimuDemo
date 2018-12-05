@@ -4,7 +4,7 @@ import com.luojilab.component.componentlib.applicationlike.IApplicationLike;
 import com.luojilab.component.componentlib.applicationlike.RegisterCompManual;
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
-import com.luojilab.componentservice.readerbook.ReadBookService;
+import com.xlab.componentservice.readerbook.ReadBookService;
 import com.luojilab.reader.serviceimpl.ReadBookServiceImplKotlin;
 
 /**

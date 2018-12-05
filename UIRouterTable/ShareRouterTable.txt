@@ -4,6 +4,6 @@ HOST : share
 
 分享书籍-内容编辑页面
 /share/edit/book
-author:com.luojilab.componentservice.share.bean.Author
+author:com.xlab.componentservice.share.bean.Author
 bookName:String
 

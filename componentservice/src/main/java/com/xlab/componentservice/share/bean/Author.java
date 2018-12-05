@@ -1,8 +1,4 @@
-package com.luojilab.componentservice.share.bean;
-
-/**
- * Created by mrzhang on 2017/12/14.
- */
+package com.xlab.componentservice.share.bean;
 
 public class Author {
     private String name;

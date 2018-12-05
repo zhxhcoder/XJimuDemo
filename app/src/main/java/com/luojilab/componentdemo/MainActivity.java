@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
-import com.luojilab.componentservice.readerbook.ReadBookService;
+import com.xlab.componentservice.readerbook.ReadBookService;
 import com.luojilab.router.facade.annotation.RouteNode;
 import com.xlab.base.utils.ToastManager;
 import com.xlab.core.app.BaseActivity;

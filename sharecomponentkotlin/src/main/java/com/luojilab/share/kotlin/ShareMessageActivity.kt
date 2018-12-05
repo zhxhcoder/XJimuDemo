@@ -4,7 +4,7 @@ import android.os.Bundle
 import com.xlab.core.BaseActivity
 import com.luojilab.component.componentlib.router.ui.UIRouter
 import com.luojilab.component.componentlib.service.JsonService
-import com.luojilab.componentservice.share.bean.AuthorKt
+import com.xlab.componentservice.share.bean.AuthorKt
 import com.luojilab.router.facade.annotation.Autowired
 import com.luojilab.router.facade.annotation.RouteNode
 import kotlinx.android.synthetic.main.kotlin_activity_share.*

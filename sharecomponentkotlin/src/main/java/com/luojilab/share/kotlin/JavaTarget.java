@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.luojilab.component.componentlib.service.AutowiredService;
-import com.luojilab.componentservice.share.bean.AuthorKt;
+import com.xlab.componentservice.share.bean.AuthorKt;
 import com.luojilab.router.facade.annotation.Autowired;
 import com.luojilab.router.facade.annotation.RouteNode;
 
