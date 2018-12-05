@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="common_white">#ffffff</color>
+    <color name="common_black">#2A4159</color>
+    <color name="common_gray">#8997a5</color>
+    <color name="common_blue">#00a5ec</color>
+    <color name="common_red">#ff3b30</color>
+    <color name="common_green">#4dd363</color>
+
     <!--通用颜色-->
     <color name="common_color_white">#ffffffff</color>
     <color name="common_color_black">#ff000000</color>
@@ -7,4 +15,8 @@
     <color name="common_colorPrimary">#3F51B5</color>
     <color name="common_colorPrimaryDark">#303F9F</color>
     <color name="common_colorAccent">#FF4081</color>
+
+
+    <color name="common_C9_skin">#ffffff</color>
+
 </resources>

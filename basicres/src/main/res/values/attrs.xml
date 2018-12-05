@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="common_NGWLoadingStyle" format="reference" />
+    <declare-styleable name="common_NGWLoadingView">
+        <attr name="common_ngw_loading_view_size" format="dimension" />
+        <attr name="common_ngw__android_color" format="color" />
+        <attr name="common_ngw_loading_progress_style">
+            <enum name="progress" value="0" />
+            <enum name="loading" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

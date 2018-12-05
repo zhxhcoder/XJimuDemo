@@ -1,12 +1,12 @@
 package com.luojilab.share.kotlin
 
 import android.os.Bundle
-import com.xlab.core.BaseActivity
 import com.luojilab.component.componentlib.router.ui.UIRouter
 import com.luojilab.component.componentlib.service.JsonService
-import com.xlab.componentservice.share.bean.AuthorKt
 import com.luojilab.router.facade.annotation.Autowired
 import com.luojilab.router.facade.annotation.RouteNode
+import com.xlab.componentservice.share.bean.AuthorKt
+import com.xlab.core.app.BaseActivity
 import kotlinx.android.synthetic.main.kotlin_activity_share.*
 
 /**
@@ -14,6 +14,10 @@ import kotlinx.android.synthetic.main.kotlin_activity_share.*
  */
 @RouteNode(path = "/shareMagazine", desc = "分享杂志页面")
 class ShareMessageActivity : BaseActivity() {
+
+    override fun setLayout() {
+        setContentView(R.layout.kotlin_activity_share)
+    }
 
     @Autowired(name = "bookName")
     @JvmField
@@ -25,7 +29,6 @@ class ShareMessageActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.kotlin_activity_share)
 
         share_title.text = "Magazine"
         share_tv_tag.setText(magazineName)
@@ -38,7 +41,5 @@ class ShareMessageActivity : BaseActivity() {
             UIRouter.getInstance().openUri(this,
                     "DDComp://kotlin/javatest?bookName=NYTIME&author=" + JsonService.Factory.getSingletonImpl().toJsonString(author), null)
         }
-
     }
-
 }
