@@ -1,6 +1,6 @@
-package com.zhxh.base.network;
+package com.xlab.base.network;
 
-import com.zhxh.base.utils.CommonUtils;
+import com.xlab.base.utils.CommonUtils;
 
 /**
  * Created by zhxh on 2018/11/1

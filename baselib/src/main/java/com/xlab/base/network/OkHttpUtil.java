@@ -1,8 +1,8 @@
-package com.zhxh.base.network;
+package com.xlab.base.network;
 
-import com.zhxh.base.config.CommonDataManager;
-import com.zhxh.base.utils.CommonUtils;
-import com.zhxh.base.utils.LogUtils;
+import com.xlab.base.config.CommonDataManager;
+import com.xlab.base.utils.CommonUtils;
+import com.xlab.base.utils.LogUtils;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

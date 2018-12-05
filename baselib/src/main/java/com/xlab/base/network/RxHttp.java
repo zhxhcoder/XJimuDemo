@@ -1,7 +1,7 @@
-package com.zhxh.base.network;
+package com.xlab.base.network;
 
 import com.google.gson.Gson;
-import com.zhxh.base.utils.LogUtils;
+import com.xlab.base.utils.LogUtils;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

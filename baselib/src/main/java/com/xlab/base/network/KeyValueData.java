@@ -1,4 +1,4 @@
-package com.zhxh.base.network;
+package com.xlab.base.network;
 
 import com.google.gson.annotations.SerializedName;
 

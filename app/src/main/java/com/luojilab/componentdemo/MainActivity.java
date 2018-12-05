@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Button;
 
-import com.zhxh.base.utils.ToastManager;
+import com.xlab.base.utils.ToastManager;
 import com.luojilab.component.basicres.BaseActivity;
 import com.luojilab.component.basicres.BaseApplication;
 import com.luojilab.component.componentlib.router.Router;

@@ -1,6 +1,6 @@
-package com.zhxh.base.network;
+package com.xlab.base.network;
 
-import com.zhxh.base.utils.CommonUtils;
+import com.xlab.base.utils.CommonUtils;
 
 import org.json.JSONException;
 import org.json.JSONObject;

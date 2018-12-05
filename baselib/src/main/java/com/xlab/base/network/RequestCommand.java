@@ -1,4 +1,4 @@
-package com.zhxh.base.network;
+package com.xlab.base.network;
 
 /**
  * Created by zhxh on 2018/11/1

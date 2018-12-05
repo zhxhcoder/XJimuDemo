@@ -1,4 +1,4 @@
-package com.zhxh.base.utils;
+package com.xlab.base.utils;
 
 import android.annotation.TargetApi;
 import android.app.Activity;

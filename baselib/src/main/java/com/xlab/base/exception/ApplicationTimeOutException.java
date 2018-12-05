@@ -1,4 +1,4 @@
-package com.zhxh.base.exception;
+package com.xlab.base.exception;
 
 /**
  * Created by zhxh on 2018/11/1

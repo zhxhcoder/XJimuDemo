@@ -1,4 +1,4 @@
-package com.zhxh.base.config;
+package com.xlab.base.config;
 
 import java.io.Serializable;
 
