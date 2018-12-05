@@ -30,11 +30,14 @@ android {
         debug {
             minifyEnabled false
         }
-
     }
 
     resourcePrefix "readerbook_"
 
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {

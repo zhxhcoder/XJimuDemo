@@ -3,5 +3,5 @@ include ':app',
         ':readercomponent',
         ':sharecomponent',
         ':componentservice',
-        ':basiclib',
+        ':baselib',
         ':basicres'

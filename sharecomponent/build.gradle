@@ -29,7 +29,11 @@ android {
     }
 
     resourcePrefix "share_"
-
+    
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
