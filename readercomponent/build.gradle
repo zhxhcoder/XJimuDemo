@@ -18,7 +18,6 @@ android {
                 arguments = [host: "reader"]
             }
         }
-
     }
 
     buildTypes {
@@ -32,7 +31,7 @@ android {
         }
     }
 
-    resourcePrefix "readerbook_"
+    resourcePrefix "reader_"
 
     compileOptions {
         sourceCompatibility = '1.8'
@@ -53,7 +52,7 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.luojilab.reader.runalone.application.ReaderApplication'
+    applicationName = 'com.zhxh.reader.runalone.application.ReaderApplication'
     isRegisterCompoAuto = false
 }
 repositories {

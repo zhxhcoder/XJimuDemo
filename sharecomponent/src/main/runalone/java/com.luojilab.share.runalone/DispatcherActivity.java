@@ -1,5 +1,5 @@
 /*
-package com.luojilab.share.runalone;
+package com.zhxh.share.runalone;
 
 import android.net.Uri;
 import android.support.annotation.Nullable;

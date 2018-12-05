@@ -1,7 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-
-    package="com.luojilab.share.kotlin">
+    package="com.zhxh.share.kotlin">
 
     <application
         android:allowBackup="true"
@@ -9,12 +8,11 @@
         android:supportsRtl="true"
         tools:replace="android:label">
 
-
         <activity android:name=".ShareMessageActivity">
 
         </activity>
 
-        <activity android:name=".JavaTarget"/>
+        <activity android:name=".JavaTarget" />
 
     </application>
 

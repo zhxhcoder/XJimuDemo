@@ -64,12 +64,12 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.install_share:
-                Router.registerComponent("com.luojilab.share.applike.ShareApplike");
-                Router.registerComponent("com.luojilab.share.kotlin.applike.KotlinApplike");
+                Router.registerComponent("com.zhxh.share.applike.ShareApplike");
+                Router.registerComponent("com.zhxh.share.kotlin.applike.KotlinApplike");
                 break;
             case R.id.uninstall_share:
-                Router.unregisterComponent("com.luojilab.share.applike.ShareApplike");
-                Router.unregisterComponent("com.luojilab.share.kotlin.applike.KotlinApplike");
+                Router.unregisterComponent("com.zhxh.share.applike.ShareApplike");
+                Router.unregisterComponent("com.zhxh.share.kotlin.applike.KotlinApplike");
                 break;
             case R.id.ui_router_demos:
                 UIRouter.getInstance().openUri(MainActivity.this, "JIMU://app/uirouter/demo", null);

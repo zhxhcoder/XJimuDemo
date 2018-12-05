@@ -1,9 +1,9 @@
-package com.luojilab.share.runalone.application
+package com.zhxh.share.runalone.application
 
 import com.xlab.core.app.BaseApplication
 
 /**
- * Created by mrzhang on 2018/1/5.
+ * Created by zhxh on 2018/1/5.
  */
 class KotlinApplication : BaseApplication() {
 

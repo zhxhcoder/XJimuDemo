@@ -20,7 +20,6 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-
     }
 
     buildTypes {
@@ -46,6 +45,6 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.luojilab.share.runalone.application.KotlinApplication'
+    applicationName = 'com.zhxh.share.runalone.application.KotlinApplication'
     isRegisterCompoAuto = true
 }

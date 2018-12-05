@@ -47,7 +47,7 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.luojilab.share.runalone.application.ShareApplication'
+    applicationName = 'com.zhxh.share.runalone.application.ShareApplication'
     isRegisterCompoAuto = true
 }
 repositories {
