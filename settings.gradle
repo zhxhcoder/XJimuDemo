@@ -4,4 +4,4 @@ include ':app',
         ':sharecomponent',
         ':componentservice',
         ':baselib',
-        ':basicres'
+        ':corelib'
