@@ -1,7 +1,7 @@
 package com.luojilab.share.kotlin
 
 import android.os.Bundle
-import com.luojilab.component.basicres.BaseActivity
+import com.xlab.core.BaseActivity
 import com.luojilab.component.componentlib.router.ui.UIRouter
 import com.luojilab.component.componentlib.service.JsonService
 import com.luojilab.componentservice.share.bean.AuthorKt

@@ -7,13 +7,13 @@ import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.Button;
 
-import com.xlab.base.utils.ToastManager;
-import com.luojilab.component.basicres.BaseActivity;
-import com.luojilab.component.basicres.BaseApplication;
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
 import com.luojilab.componentservice.readerbook.ReadBookService;
 import com.luojilab.router.facade.annotation.RouteNode;
+import com.xlab.base.utils.ToastManager;
+import com.xlab.core.app.BaseActivity;
+import com.xlab.core.app.BaseApplication;
 
 @RouteNode(path = "/main", desc = "首页")
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -23,6 +23,11 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     Button installReadBookBtn;
     Button uninstallReadBtn;
+
+    @Override
+    protected void setLayout() {
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,7 +75,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
                 UIRouter.getInstance().openUri(MainActivity.this, "JIMU://app/uirouter/demo", null);
                 break;
             case R.id.ui_msg_demos:
-                UIRouter.getInstance().openUri(MainActivity.this, "JIMU://app/msg/demo/1",null);
+                UIRouter.getInstance().openUri(MainActivity.this, "JIMU://app/msg/demo/1", null);
                 break;
         }
     }

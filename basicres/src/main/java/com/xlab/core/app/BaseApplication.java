@@ -1,11 +1,7 @@
-package com.luojilab.component.basicres;
+package com.xlab.core.app;
 
 import android.app.Application;
 import android.support.annotation.Nullable;
-
-/**
- * Created by mrzhang on 2018/1/16.
- */
 
 public class BaseApplication extends Application {
 

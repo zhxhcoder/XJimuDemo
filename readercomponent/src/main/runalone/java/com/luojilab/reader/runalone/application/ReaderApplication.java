@@ -1,6 +1,6 @@
 package com.luojilab.reader.runalone.application;
 
-import com.luojilab.component.basicres.BaseApplication;
+import com.xlab.core.app.BaseApplication;
 import com.luojilab.component.componentlib.router.Router;
 
 /**

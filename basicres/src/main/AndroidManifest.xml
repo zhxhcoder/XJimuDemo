@@ -1,8 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xlab.core">
 
-    package="com.luojilab.component.basicres">
-
-    <application android:allowBackup="true" android:label="@string/kotlin_app_name"
+    <application
+        android:allowBackup="true"
+        android:label="@string/kotlin_app_name"
         android:supportsRtl="true">
 
     </application>

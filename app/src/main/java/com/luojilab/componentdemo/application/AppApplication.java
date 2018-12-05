@@ -1,13 +1,11 @@
 package com.luojilab.componentdemo.application;
 
-import com.luojilab.component.basicres.BaseApplication;
+import com.xlab.core.app.BaseApplication;
 import com.luojilab.component.componentlib.log.ILogger;
 import org.github.jimu.msg.EventManager;
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
 import com.luojilab.componentdemo.msg.AppComponentEventManager;
-import com.luojilab.componentdemo.msg.MainProcessMsgService;
-import com.luojilab.componentdemo.msg.RemoteMsgService;
 
 /**
  * Created by mrzhang on 2017/6/15.

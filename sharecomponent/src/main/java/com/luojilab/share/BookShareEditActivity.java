@@ -8,13 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.luojilab.component.basicres.BaseActivity;
 import com.luojilab.component.componentlib.service.AutowiredService;
 import com.luojilab.componentservice.share.bean.Author;
 import com.luojilab.router.facade.annotation.Autowired;
 import com.luojilab.router.facade.annotation.RouteNode;
 import com.luojilab.share.bean.BookShareBean;
 import com.luojilab.share.core.AbsShareBean;
+import com.xlab.core.app.BaseActivity;
 
 /**
  * Created by mrzhang on 2017/6/20.
@@ -37,6 +37,11 @@ public class BookShareEditActivity extends BaseActivity {
     private Button btnShareWechat;
 
     private final static int RESULT_CODE = 8888;
+
+    @Override
+    protected void setLayout() {
+
+    }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
