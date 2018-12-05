@@ -40,7 +40,6 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     testImplementation deps.junit
-    implementation deps.kotlin.kotlin_jdk7
 }
 
 combuild {
