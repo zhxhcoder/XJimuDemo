@@ -10,10 +10,10 @@ import org.github.jimu.msg.notation.Event;
 
 /**
  * <p><b>Package:</b> com.zhxh.xjimudemo.msg </p>
- * <p><b>Project:</b> jimu-sample-project </p>
+ * <p><b>Project:</b> XJimuDemo </p>
  * <p><b>Classname:</b> AppComponentEventManager </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 2018/7/30.
+ * Created by zhxh on 2018/7/30.
  */
 public interface AppComponentEventManager {
     @AriseProcess()

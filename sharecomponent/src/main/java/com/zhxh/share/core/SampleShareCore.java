@@ -2,10 +2,10 @@ package com.zhxh.share.core;
 
 /**
  * <p><b>Package:</b> com.zhxh.share </p>
- * <p><b>Project:</b> jimu-sample-project </p>
+ * <p><b>Project:</b> XJimuDemo </p>
  * <p><b>Classname:</b> SampleShareCore </p>
  * <p><b>Description:</b> just a sample to display the share operate </p>
- * Created by leobert on 2018/7/6.
+ * Created by zhxh on 2018/7/6.
  */
 public class SampleShareCore implements IShareApi {
     private static SampleShareCore instance = null;

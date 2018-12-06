@@ -6,10 +6,10 @@ import org.github.jimu.msg.bean.RemoteEventBean;
 
 /**
  * <p><b>Package:</b> com.zhxh.xjimudemo.msg.event </p>
- * <p><b>Project:</b> jimu-sample-project </p>
+ * <p><b>Project:</b> XJimuDemo </p>
  * <p><b>Classname:</b> EventB </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 2018/6/7.
+ * Created by zhxh on 2018/6/7.
  */
 public class EventB implements RemoteEventBean{
     private String msg;

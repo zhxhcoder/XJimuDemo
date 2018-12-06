@@ -4,10 +4,10 @@ import com.zhxh.share.core.AbsShareBean;
 
 /**
  * <p><b>Package:</b> com.zhxh.share.bean </p>
- * <p><b>Project:</b> jimu-sample-project </p>
+ * <p><b>Project:</b> XJimuDemo </p>
  * <p><b>Classname:</b> BookShareBean </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 2018/7/6.
+ * Created by zhxh on 2018/7/6.
  */
 public class BookShareBean extends AbsShareBean {
     private String book;

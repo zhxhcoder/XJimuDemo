@@ -5,18 +5,16 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.luojilab.component.componentlib.service.AutowiredService;
-import com.xlab.componentservice.share.bean.AuthorKt;
 import com.luojilab.router.facade.annotation.Autowired;
 import com.luojilab.router.facade.annotation.RouteNode;
-
-import kotlin.jvm.JvmField;
+import com.xlab.componentservice.share.bean.AuthorKt;
 
 /**
  * <p><b>Package:</b> com.zhxh.share.kotlin </p>
  * <p><b>Project:</b> JIMU </p>
  * <p><b>Classname:</b> JavaTarget </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 08/04/2018.
+ * Created by zhxh on 08/04/2018.
  */
 @RouteNode(path = "/javatest", desc = "test multi java and kotlin in one module")
 public class JavaTarget extends Activity {

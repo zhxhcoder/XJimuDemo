@@ -9,12 +9,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.luojilab.component.componentlib.service.AutowiredService;
-import com.xlab.componentservice.share.bean.Author;
 import com.luojilab.router.facade.annotation.Autowired;
 import com.luojilab.router.facade.annotation.RouteNode;
+import com.xlab.componentservice.share.bean.Author;
+import com.xlab.core.app.BaseActivity;
 import com.zhxh.share.bean.BookShareBean;
 import com.zhxh.share.core.AbsShareBean;
-import com.xlab.core.app.BaseActivity;
 
 /**
  * Created by zhxh on 2018/6/20.
@@ -22,12 +22,11 @@ import com.xlab.core.app.BaseActivity;
 @RouteNode(path = "/share/edit/book", desc = "分享书籍-内容编辑页面")
 public class BookShareEditActivity extends BaseActivity {
 
+    private final static int RESULT_CODE = 8888;
     @Autowired
     String bookName;
-
     @Autowired
     Author author;
-
     private TextView tvShareTitle;
     private TextView tvShareBook;
     private TextView tvAuthor;
@@ -35,8 +34,6 @@ public class BookShareEditActivity extends BaseActivity {
     private EditText etShareReason;
     private Button btnShareQQ;
     private Button btnShareWechat;
-
-    private final static int RESULT_CODE = 8888;
 
     @Override
     protected void setLayout() {

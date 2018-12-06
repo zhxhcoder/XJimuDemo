@@ -24,9 +24,9 @@ public class DispatcherActivity extends AbsDispatcherActivity {
     private static final String TAG = "DispatcherActivity";
 */
 /*
-    * use ddcompo://www.luojilab.com/compodemo?target=share/shareBook?bookName=Dummy to display
-    *
-    * *//*
+ * use ddcompo://www.luojilab.com/compodemo?target=share/shareBook?bookName=Dummy to display
+ *
+ * *//*
 
 
     private static final List<String> transferHost = Arrays.asList(

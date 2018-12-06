@@ -10,7 +10,7 @@ import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
  * <p><b>Project:</b> JIMU </p>
  * <p><b>Classname:</b> Demo1Activity </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 28/03/2018.
+ * Created by zhxh on 28/03/2018.
  */
 @RouteNode(path = "/uirouter/demo/1", desc = "无参数")
 public class Demo1Activity extends TestActivity {

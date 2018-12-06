@@ -11,10 +11,10 @@ import com.zhxh.xjimudemo.R;
 
 /**
  * <p><b>Package:</b> com.zhxh.xjimudemo.msg </p>
- * <p><b>Project:</b> jimu-sample-project </p>
+ * <p><b>Project:</b> XJimuDemo </p>
  * <p><b>Classname:</b> Foo </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 2018/6/7.
+ * Created by zhxh on 2018/6/7.
  */
 public abstract class Foo extends Activity {
     protected TextView tvMsg;

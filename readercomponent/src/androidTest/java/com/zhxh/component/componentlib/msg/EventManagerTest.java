@@ -15,7 +15,7 @@ import static org.junit.Assert.*;
  * <p><b>Project:</b> JIMU </p>
  * <p><b>Classname:</b> EventManagerTest </p>
  * <p><b>Description:</b> TODO </p>
- * Created by leobert on 2018/5/2.
+ * Created by zhxh on 2018/5/2.
  */
 @RunWith(AndroidJUnit4.class)
 public class EventManagerTest {
