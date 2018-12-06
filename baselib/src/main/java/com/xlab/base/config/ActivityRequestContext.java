@@ -13,6 +13,9 @@ public class ActivityRequestContext implements Serializable {
     private int requestID;
     private int type;
 
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
+    }
 
     public int getType() {
         return type;
@@ -20,10 +23,6 @@ public class ActivityRequestContext implements Serializable {
 
     public void setType(int type) {
         this.type = type;
-    }
-
-    public static long getSerialVersionUID() {
-        return serialVersionUID;
     }
 
     public String getId() {

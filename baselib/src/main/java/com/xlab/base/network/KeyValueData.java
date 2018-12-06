@@ -28,6 +28,7 @@ public class KeyValueData implements Serializable {
         this.key = String.valueOf(key);
         this.value = value;
     }
+
     public String getKey() {
         return key;
     }

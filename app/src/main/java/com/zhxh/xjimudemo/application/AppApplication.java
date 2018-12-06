@@ -1,11 +1,12 @@
 package com.zhxh.xjimudemo.application;
 
-import com.xlab.core.app.BaseApplication;
 import com.luojilab.component.componentlib.log.ILogger;
-import org.github.jimu.msg.EventManager;
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
+import com.xlab.core.app.BaseApplication;
 import com.zhxh.xjimudemo.msg.AppComponentEventManager;
+
+import org.github.jimu.msg.EventManager;
 
 /**
  * Created by zhxh on 2018/6/15.

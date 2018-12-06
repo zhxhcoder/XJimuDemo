@@ -21,7 +21,7 @@ public abstract class BaseLazyFragment extends BaseFragment {
     private boolean isViewCreated = false;
 
     private boolean currentVisibleState = false;
-
+    private Handler mHandler;
 
     @Override
     public void setUserVisibleHint(boolean isVisibleToUser) {
@@ -81,7 +81,6 @@ public abstract class BaseLazyFragment extends BaseFragment {
         }
     }
 
-
     /**
      * 统一处理 显示隐藏
      *
@@ -129,8 +128,6 @@ public abstract class BaseLazyFragment extends BaseFragment {
             }
         });
     }
-
-    private Handler mHandler;
 
     private Handler getHandler() {
         if (mHandler == null) {

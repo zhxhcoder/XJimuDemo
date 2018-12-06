@@ -20,8 +20,24 @@ public class OkHttpTools {
     public static final int timeOutExcepState = 1;
 
     public static final int appExcepState = 2;
+    private TempDataCache tempDataCache = null;
 
     public OkHttpTools() {
+    }
+
+    /***
+     * post加密请求
+     * @param requestID
+     * @return
+     */
+    public static boolean isPostRequest(int requestID) {
+
+        return true;
+    }
+
+    private static String getUrlParams() {
+        return "s=" + CommonDataManager.CHANNEL + "&version=" + CommonDataManager.VERSIONNAME + "&packtype=" + CommonDataManager.PACKTYPE;
+
     }
 
     public void httpGet(String url, final DataPackage dataPackage)
@@ -126,8 +142,6 @@ public class OkHttpTools {
         }
     }
 
-    private TempDataCache tempDataCache = null;
-
     private class TempDataCache {
 
         int state = -1;
@@ -139,22 +153,6 @@ public class OkHttpTools {
             dataPackage.setState(state);
             dataPackage.setTempData(responseData);
         }
-    }
-
-    /***
-     * post加密请求
-     * @param requestID
-     * @return
-     */
-    public static boolean isPostRequest(int requestID) {
-
-        return true;
-    }
-
-
-    private static String getUrlParams() {
-        return "s=" + CommonDataManager.CHANNEL + "&version=" + CommonDataManager.VERSIONNAME + "&packtype=" + CommonDataManager.PACKTYPE;
-
     }
 
 }

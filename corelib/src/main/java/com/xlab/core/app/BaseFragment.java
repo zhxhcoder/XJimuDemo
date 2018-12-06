@@ -28,6 +28,7 @@ public abstract class BaseFragment extends Fragment {
     protected CompositeDisposable mDisposables = new CompositeDisposable();
 
     protected View rootView;
+    protected ActivityRequestContext initRequest;
     private Unbinder unbinder;
     private LoadingDialog loadingDialog;
 
@@ -42,7 +43,6 @@ public abstract class BaseFragment extends Fragment {
      * 请求数据
      */
     public abstract void requestData();
-
 
     @Override
     public void onAttach(Context context) {
@@ -62,8 +62,6 @@ public abstract class BaseFragment extends Fragment {
         initView(rootView);
         return rootView;
     }
-
-    protected ActivityRequestContext initRequest;
 
     /**
      * 获取Intent传递过来的请求参数

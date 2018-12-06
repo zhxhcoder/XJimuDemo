@@ -9,9 +9,9 @@ import android.view.View;
 
 import com.luojilab.component.componentlib.router.Router;
 import com.luojilab.component.componentlib.router.ui.UIRouter;
+import com.luojilab.router.facade.annotation.RouteNode;
 import com.zhxh.xjimudemo.msg.event.EventA;
 import com.zhxh.xjimudemo.msg.event.EventB;
-import com.luojilab.router.facade.annotation.RouteNode;
 
 import org.github.jimu.msg.ConsumeOn;
 import org.github.jimu.msg.EventListener;

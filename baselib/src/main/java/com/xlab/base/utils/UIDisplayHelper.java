@@ -39,12 +39,15 @@ public class UIDisplayHelper {
     public static final float DENSITY = Resources.getSystem()
             .getDisplayMetrics().density;
     private static final String TAG = "UIDisplayHelper";
-
+    // ====================== Setting ===========================
+    private static final String VIVO_NAVIGATION_GESTURE = "navigation_gesture_on";
+    private static final String HUAWAI_DISPLAY_NOTCH_STATUS = "display_notch_status";
+    private static final String XIAOMI_DISPLAY_NOTCH_STATUS = "force_black";
+    private static final String XIAOMI_FULLSCREEN_GESTURE = "force_fsg_nav_bar";
     /**
      * 是否有摄像头
      */
     private static Boolean sHasCamera = null;
-
     private static int[] sPortraitRealSizeCache = null;
     private static int[] sLandscapeRealSizeCache = null;
 
@@ -167,7 +170,6 @@ public class UIDisplayHelper {
         size[1] = heightPixels;
         return size;
     }
-
 
     public static boolean isNavMenuExist(Context context) {
         //通过判断设备是否有返回键、菜单键(不是虚拟键,是手机屏幕外的按键)来确定是否有navigation bar
@@ -451,7 +453,6 @@ public class UIDisplayHelper {
         return (params.flags & WindowManager.LayoutParams.FLAG_FULLSCREEN) == WindowManager.LayoutParams.FLAG_FULLSCREEN;
     }
 
-
     public static boolean isElevationSupported() {
         return android.os.Build.VERSION.SDK_INT >= 21;
     }
@@ -494,12 +495,6 @@ public class UIDisplayHelper {
         }
         return haveNav;
     }
-
-    // ====================== Setting ===========================
-    private static final String VIVO_NAVIGATION_GESTURE = "navigation_gesture_on";
-    private static final String HUAWAI_DISPLAY_NOTCH_STATUS = "display_notch_status";
-    private static final String XIAOMI_DISPLAY_NOTCH_STATUS = "force_black";
-    private static final String XIAOMI_FULLSCREEN_GESTURE = "force_fsg_nav_bar";
 
     /**
      * 获取vivo手机设置中的"navigation_gesture_on"值，判断当前系统是使用导航键还是手势导航操作

@@ -7,14 +7,14 @@ public class BaseApplication extends Application {
 
     private static BaseApplication mAppContext;
 
+    @Nullable
+    public static Application getAppContext() {
+        return mAppContext;
+    }
+
     @Override
     public void onCreate() {
         super.onCreate();
         mAppContext = this;
-    }
-
-    @Nullable
-    public static Application getAppContext() {
-        return mAppContext;
     }
 }

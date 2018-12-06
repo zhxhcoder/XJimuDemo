@@ -10,45 +10,37 @@ import java.net.URLEncoder;
 public abstract class DataPackage {
 
     /**
-     * 属性分割符
-     */
-    protected static final String PARAMETER_SEPARATOR = "&";
-
-    /**
-     * 键值分割符
-     */
-    protected static final String NAME_VALUE_SEPARATOR = "=";
-
-    /**
      * GET请求
      */
     public static final String REQUEST_GET = "GET";
-
     /**
      * POST请求
      */
     public static final String REQUEST_POST = "POST";
-
     /**
      * 返回数据包含有效数据长度,对应股票数,行情状态
      */
     public static final int HEADER_LEN_NUM_STATE = 3;
-
     /**
      * 返回数据包含有效数据长度,行情状态
      */
     public static final int HEADER_LEN_STATE = 2;
-
     /**
      * 返回数据包含有效数据长度
      */
     public static final int HEADER_LEN = 1;
-
     /**
      * 返回数据特殊数据
      */
     public static final int HEADER_EMPTY = 0;
-
+    /**
+     * 属性分割符
+     */
+    protected static final String PARAMETER_SEPARATOR = "&";
+    /**
+     * 键值分割符
+     */
+    protected static final String NAME_VALUE_SEPARATOR = "=";
     /**
      * 请求ID
      */
@@ -78,6 +70,11 @@ public abstract class DataPackage {
      * 记录数据分割
      */
     protected String COMPARTB = ",";
+    /**
+     * 请求url
+     */
+    protected String requestUrl;
+    private String tag;
 
     /**
      * 返回头信息大小默认不包含头信息 返回 0
@@ -108,23 +105,6 @@ public abstract class DataPackage {
     public abstract Object getData() throws Exception;
 
     /**
-     * 请求url
-     */
-    protected String requestUrl;
-
-    private String tag;
-
-    /**
-     * 设置请求返回状态
-     *
-     * @param state 请求返回状态
-     */
-    public void setState(int state) {
-
-        this.state = state;
-    }
-
-    /**
      * 设置请求返回数据
      *
      * @param tempData 服务器返回的数据
@@ -151,6 +131,16 @@ public abstract class DataPackage {
     public int getState() {
 
         return state;
+    }
+
+    /**
+     * 设置请求返回状态
+     *
+     * @param state 请求返回状态
+     */
+    public void setState(int state) {
+
+        this.state = state;
     }
 
     /**

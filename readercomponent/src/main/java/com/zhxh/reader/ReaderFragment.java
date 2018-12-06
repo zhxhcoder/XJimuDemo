@@ -19,9 +19,8 @@ import com.xlab.componentservice.share.bean.AuthorKt;
 
 public class ReaderFragment extends Fragment {
 
-    private View rootView;
-
     private final static int REQUEST_CODE = 7777;
+    private View rootView;
 
     @Nullable
     @Override

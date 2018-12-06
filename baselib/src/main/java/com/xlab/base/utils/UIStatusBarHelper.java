@@ -416,13 +416,6 @@ public class UIStatusBarHelper {
         sVirtualDensityDpi = densityDpi;
     }
 
-
-    @IntDef({STATUSBAR_TYPE_DEFAULT, STATUSBAR_TYPE_MIUI, STATUSBAR_TYPE_FLYME, STATUSBAR_TYPE_ANDROID6})
-    @Retention(RetentionPolicy.SOURCE)
-    private @interface StatusBarType {
-    }
-
-
     /**
      * popup window 适配状态栏 在show之前调用
      * 弹出的窗口是否覆盖状态栏
@@ -466,6 +459,11 @@ public class UIStatusBarHelper {
                         (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 45, context.getResources().getDisplayMetrics());
             }
         }
+    }
+
+    @IntDef({STATUSBAR_TYPE_DEFAULT, STATUSBAR_TYPE_MIUI, STATUSBAR_TYPE_FLYME, STATUSBAR_TYPE_ANDROID6})
+    @Retention(RetentionPolicy.SOURCE)
+    private @interface StatusBarType {
     }
 
 }

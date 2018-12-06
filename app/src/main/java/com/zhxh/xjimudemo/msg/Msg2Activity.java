@@ -6,15 +6,14 @@ import android.text.Spanned;
 import android.text.style.ClickableSpan;
 import android.view.View;
 
+import com.luojilab.component.componentlib.router.Router;
+import com.luojilab.router.facade.annotation.RouteNode;
+import com.zhxh.xjimudemo.msg.event.EventA;
+
 import org.github.jimu.msg.ConsumeOn;
 import org.github.jimu.msg.EventListener;
 import org.github.jimu.msg.EventManager;
 import org.github.jimu.msg.bean.ConsumerMeta;
-
-import com.luojilab.component.componentlib.router.Router;
-import com.zhxh.xjimudemo.msg.event.EventA;
-import com.zhxh.xjimudemo.msg.event.EventB;
-import com.luojilab.router.facade.annotation.RouteNode;
 
 @RouteNode(path = "/msg/demo/2", desc = "主进程页面2")
 public class Msg2Activity extends Foo {

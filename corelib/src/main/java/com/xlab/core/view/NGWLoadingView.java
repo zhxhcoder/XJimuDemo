@@ -22,23 +22,24 @@ import com.xlab.core.R;
  */
 public class NGWLoadingView extends View {
 
+    public static final int PROGRESS = 0;
+    public static final int LOADING = 1;
+    private static final int LINE_COUNT = 12;
+    private static final int DEGREE_PER_LINE = 360 / LINE_COUNT;
     private int mSize;
     private int mPaintColor;
     private int mAnimateValue = 0;
     private ValueAnimator mAnimator;
     private Paint mPaint;
-    private static final int LINE_COUNT = 12;
-    private static final int DEGREE_PER_LINE = 360 / LINE_COUNT;
     private RectF oval;
-
-    public static final int PROGRESS = 0;
-    public static final int LOADING = 1;
-
-    @IntDef(flag = true, value = {PROGRESS, LOADING})
-    public @interface LoadingStyle {
-    }
-
     private int progressStyle;
+    private ValueAnimator.AnimatorUpdateListener mUpdateListener = new ValueAnimator.AnimatorUpdateListener() {
+        @Override
+        public void onAnimationUpdate(ValueAnimator animation) {
+            mAnimateValue = (int) animation.getAnimatedValue();
+            invalidate();
+        }
+    };
 
     public NGWLoadingView(Context context) {
         this(context, null);
@@ -89,14 +90,6 @@ public class NGWLoadingView extends View {
         requestLayout();
     }
 
-    private ValueAnimator.AnimatorUpdateListener mUpdateListener = new ValueAnimator.AnimatorUpdateListener() {
-        @Override
-        public void onAnimationUpdate(ValueAnimator animation) {
-            mAnimateValue = (int) animation.getAnimatedValue();
-            invalidate();
-        }
-    };
-
     public void start() {
         if (mAnimator == null) {
             mAnimator = ValueAnimator.ofInt(0, LINE_COUNT - 1);
@@ -119,7 +112,6 @@ public class NGWLoadingView extends View {
             mAnimator = null;
         }
     }
-
 
     private void drawLoading(Canvas canvas, int rotateDegrees) {
         int width = mSize / 12, height = mSize / 6;
@@ -185,5 +177,9 @@ public class NGWLoadingView extends View {
 
     public void setStyle(@LoadingStyle int style) {
         progressStyle = style;
+    }
+
+    @IntDef(flag = true, value = {PROGRESS, LOADING})
+    public @interface LoadingStyle {
     }
 }

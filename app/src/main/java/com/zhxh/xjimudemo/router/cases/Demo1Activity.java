@@ -2,8 +2,8 @@ package com.zhxh.xjimudemo.router.cases;
 
 import android.widget.TextView;
 
-import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
 import com.luojilab.router.facade.annotation.RouteNode;
+import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
 
 /**
  * <p><b>Package:</b> com.zhxh.xjimudemo.router.cases </p>

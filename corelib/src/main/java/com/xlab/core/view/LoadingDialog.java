@@ -81,17 +81,9 @@ public class LoadingDialog extends Dialog {
          * 显示信息图标
          */
         public static final int ICON_TYPE_INFO = 4;
-
-        @IntDef({ICON_TYPE_NOTHING, ICON_TYPE_LOADING, ICON_TYPE_SUCCESS, ICON_TYPE_FAIL, ICON_TYPE_INFO})
-        @Retention(RetentionPolicy.SOURCE)
-        public @interface IconType {
-        }
-
         private @IconType
         int mCurrentIconType = ICON_TYPE_NOTHING;
-
         private Context mContext;
-
         private CharSequence mTipWord;
 
         public Builder(Context context) {
@@ -158,6 +150,11 @@ public class LoadingDialog extends Dialog {
                 contentWrap.addView(tipView);
             }
             return dialog;
+        }
+
+        @IntDef({ICON_TYPE_NOTHING, ICON_TYPE_LOADING, ICON_TYPE_SUCCESS, ICON_TYPE_FAIL, ICON_TYPE_INFO})
+        @Retention(RetentionPolicy.SOURCE)
+        public @interface IconType {
         }
 
     }

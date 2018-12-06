@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import com.luojilab.component.componentlib.router.ui.UIRouter;
 import com.luojilab.component.componentlib.router.ui.VerifyResult;
+import com.luojilab.router.facade.annotation.RouteNode;
 import com.zhxh.xjimudemo.R;
 import com.zhxh.xjimudemo.router.cases.Demo1Activity;
 import com.zhxh.xjimudemo.router.cases.Demo2Activity;
@@ -23,7 +24,6 @@ import com.zhxh.xjimudemo.router.cases.Demo5Activity;
 import com.zhxh.xjimudemo.router.cases.Demo6Activity;
 import com.zhxh.xjimudemo.router.cases.Demo7Activity;
 import com.zhxh.xjimudemo.router.cases.Demo8Activity;
-import com.luojilab.router.facade.annotation.RouteNode;
 
 import java.util.Arrays;
 import java.util.List;

@@ -6,8 +6,7 @@
     <FrameLayout
         android:id="@+id/tab_content"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        />
+        android:layout_height="fill_parent" />
 
 </LinearLayout>
 

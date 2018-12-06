@@ -1,14 +1,13 @@
 package com.zhxh.xjimudemo.router.cases;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.widget.TextView;
 
-import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
 import com.luojilab.router.facade.annotation.Autowired;
 import com.luojilab.router.facade.annotation.RouteNode;
+import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
 
 import java.io.Serializable;
 

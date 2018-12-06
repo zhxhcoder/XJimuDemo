@@ -31,11 +31,11 @@ public class UIDeviceHelper {
     private final static String ZUKZ1 = "zuk z1";
     private final static String ESSENTIAL = "essential";
     private final static String MEIZUBOARD[] = {"m9", "M9", "mx", "MX"};
+    private static final String BRAND = Build.BRAND.toLowerCase();
     private static String sMiuiVersionName;
     private static String sFlymeVersionName;
     private static boolean sIsTabletChecked = false;
     private static boolean sIsTabletValue = false;
-    private static final String BRAND = Build.BRAND.toLowerCase();
 
     static {
         Properties properties = new Properties();

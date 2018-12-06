@@ -17,6 +17,7 @@ import io.reactivex.disposables.CompositeDisposable;
  */
 public abstract class BaseActivity extends AppCompatActivity {
     protected CompositeDisposable mDisposables = new CompositeDisposable();
+    protected ActivityRequestContext initRequest;
 
     /**
      * 设置布局
@@ -31,8 +32,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         setLayout();
         getInitBundle();
     }
-
-    protected ActivityRequestContext initRequest;
 
     /**
      * 获取Intent传递过来的请求参数

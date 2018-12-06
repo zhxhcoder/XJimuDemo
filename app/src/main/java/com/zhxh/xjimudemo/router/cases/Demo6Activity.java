@@ -3,9 +3,9 @@ package com.zhxh.xjimudemo.router.cases;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
-import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
 import com.luojilab.router.facade.annotation.Autowired;
 import com.luojilab.router.facade.annotation.RouteNode;
+import com.zhxh.xjimudemo.router.UiRouterDemoActivity;
 
 
 @RouteNode(path = "/uirouter/demo/6", desc = "使用json字符串传参")
