@@ -38,7 +38,7 @@ foo:parcelable
 
 使用json字符串传参
 /uirouter/demo/6
-EXTRA_OBJ_FOO:com.zhxh.componentdemo.router.cases.Demo6Activity.Foo
+EXTRA_OBJ_FOO:com.zhxh.xjimudemo.router.cases.Demo6Activity.Foo
 
 必须参数
 /uirouter/demo/7

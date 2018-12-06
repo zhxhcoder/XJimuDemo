@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zhxh.componentdemo.router.UiRouterDemoActivity">
+    tools:context="com.zhxh.xjimudemo.router.UiRouterDemoActivity">
 
     <ListView
         android:id="@+id/uidemo_lv_cases"

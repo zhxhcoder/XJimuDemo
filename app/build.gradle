@@ -55,6 +55,6 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.zhxh.componentdemo.application.AppApplication'
+    applicationName = 'com.zhxh.xjimudemo.application.AppApplication'
     isRegisterCompoAuto = true
 }
