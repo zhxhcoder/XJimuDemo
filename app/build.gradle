@@ -55,6 +55,6 @@ dependencies {
 }
 
 combuild {
-    applicationName = 'com.luojilab.componentdemo.application.AppApplication'
+    applicationName = 'com.zhxh.componentdemo.application.AppApplication'
     isRegisterCompoAuto = true
 }
