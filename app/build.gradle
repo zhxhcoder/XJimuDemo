@@ -9,7 +9,7 @@ android {
         targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
-        applicationId "com.luojilab.androidcomponent"
+        applicationId "com.zhxh.xjimudemo"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
         javaCompileOptions {
