@@ -25,7 +25,7 @@ https://www.jianshu.com/p/1b1d77f58e84
 
 5：创建read项目和share项目
 
-6：让componentservice依赖baselib 和corelib，app、share、read都依赖componentservice，此时运行一下app、share、read，都能运行
+6：让componentservice依赖baselib 和corelib，app、share、read、fund、quant都依赖componentservice，此时运行一下app、share、read，都能运行
 
 7：配置工程下的build.gradle文件，注意，刚开始时先完全按照demo中的配置，等项目组件化做完之后，再根据自己的需求对不需要的引用进行删减；build.gradle文件配置完成后，com.dd.comgradle插件就已经引入到的项目中。
 
