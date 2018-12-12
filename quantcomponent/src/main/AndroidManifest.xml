@@ -1,2 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zhxh.quant" />
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zhxh.quant">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/quant_app_name"
+        android:supportsRtl="true"
+        tools:replace="android:label">
+        <activity android:name="com.zhxh.quant.QuantHomeActivity" />
+    </application>
+
+</manifest>

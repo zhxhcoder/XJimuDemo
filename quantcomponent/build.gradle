@@ -1,20 +1,23 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.dd.comgradle'
+
 
 android {
-    compileSdkVersion 28
-
-
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.androidTools
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "quant"]
+            }
+        }
 
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -22,13 +25,28 @@ android {
         }
     }
 
+    resourcePrefix "quant_"
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':componentservice')
+    annotationProcessor deps.jimu.router_anno_compiler
+//    annotationProcessor project(':router-anno-compiler')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation deps.junit
+}
 
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+combuild {
+    applicationName = 'com.zhxh.quant.runalone.application.QuantApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
 }
