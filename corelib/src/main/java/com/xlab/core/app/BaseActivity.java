@@ -9,6 +9,7 @@ import android.view.View;
 
 import com.luojilab.component.componentlib.service.AutowiredService;
 import com.xlab.base.config.ActivityRequestContext;
+import com.xlab.base.utils.ActivityManager;
 
 import io.reactivex.disposables.CompositeDisposable;
 
@@ -27,6 +28,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        ActivityManager.getInstance().pushActivity(this);
         AutowiredService.Factory.getSingletonImpl().autowire(this);
 
         setLayout();
@@ -76,6 +78,8 @@ public abstract class BaseActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
+        ActivityManager.getInstance().popActivity(this);
+
         if (mDisposables != null) {
             mDisposables.clear();
         }
