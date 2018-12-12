@@ -9,7 +9,7 @@ import android.view.View;
 
 import com.luojilab.component.componentlib.service.AutowiredService;
 import com.xlab.base.config.ActivityRequestContext;
-import com.xlab.base.utils.ActivityManager;
+import com.xlab.core.helper.ActivityManager;
 
 import io.reactivex.disposables.CompositeDisposable;
 

@@ -1,7 +1,9 @@
-package com.xlab.base.utils;
+package com.xlab.core.helper;
 
 import android.app.Activity;
 import android.util.Log;
+
+import com.xlab.core.app.BaseActivity;
 
 import java.util.Stack;
 
@@ -10,7 +12,7 @@ import java.util.Stack;
  */
 public class ActivityManager {
     private static final String TAG = "ActivityManager";
-    private static Stack<Activity> activityStack = new Stack<Activity>();
+    private static Stack<BaseActivity> activityStack = new Stack<>();
     private static ActivityManager instance;
 
     private ActivityManager() {
@@ -152,9 +154,9 @@ public class ActivityManager {
      * 将当前Activity推入栈中
      * @param activity
      */
-    public void pushActivity(Activity activity) {
+    public void pushActivity(BaseActivity activity) {
         if (activityStack == null) {
-            activityStack = new Stack<Activity>();
+            activityStack = new Stack<BaseActivity>();
         }
         activityStack.add(activity);
 //		Log.d(TAG, "ActivityManager.pushActivity.activity:"+activity.getComponentName());
