@@ -1,15 +1,23 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.dd.comgradle'
+
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.androidTools
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion versions.minSdk
+        targetSdkVersion versions.targetSdk
         versionCode 1
         versionName "1.0"
-    }
 
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [host: "fund"]
+            }
+        }
+
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -17,9 +25,28 @@ android {
         }
     }
 
+    resourcePrefix "fund_"
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':componentservice')
+    annotationProcessor deps.jimu.router_anno_compiler
+//    annotationProcessor project(':router-anno-compiler')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    testImplementation deps.junit
+}
 
+combuild {
+    applicationName = 'com.zhxh.fund.runalone.application.FundApplication'
+    isRegisterCompoAuto = true
+}
+repositories {
+    mavenCentral()
 }
