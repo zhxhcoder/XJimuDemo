@@ -1,4 +1,4 @@
-package com.zhxh.quant.runalone.application;
+package com.zhxh.fund.runalone.application;
 
 import com.xlab.core.app.BaseApplication;
 
